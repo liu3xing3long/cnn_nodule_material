@@ -1,0 +1,244 @@
+\documentclass[onecolumn]{IEEEtran}
+% *** CITATION PACKAGES ***
+%
+\usepackage{cite}
+\usepackage[square, comma, sort&compress, numbers]{natbib}
+\usepackage{subfigure}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+    \DeclareGraphicsExtensions{.pdf,.jpeg,.png, .tif}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% *** MATH PACKAGES ***
+%
+\usepackage[cmex10]{amsmath}
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+% \usepackage{algorithmicx}
+\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+\usepackage{algpseudocode}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage{booktabs}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\usepackage{array}
+\usepackage{booktabs}
+%\usepackage{siunitx}
+\usepackage{float}
+\usepackage{color}
+\usepackage{geometry}
+\geometry{left=1.5cm,right=1.5cm,top=1.0cm,bottom=1.0cm}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+
+\title{\emph{colornodules} on ELCAP}
+
+\maketitle
+
+\newpage
+%\section{\emph{colornodules} ON ELCAP}
+\section{Overall Statistics}
+The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_elcap_colornodules}. The overall classification rate is 84.1\%. Results for all cases are shown. Scores are presented on the most right of the image. It should be noted that cases not correctly classified are labeled out using red rectangles.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\caption{Confusion Matrix for \emph{colornodules} on ELCAP}
+\centering
+\tabcolsep=1pt
+\begin{tabular}{p{10pt}|p{60pt}|p{60pt}|p{60pt}|p{60pt}|p{60pt}|p{60pt}}
+\toprule
+\tabincell{c}{ } &\textbf{G} & \textbf{W} & \textbf{N}& \textbf{P} & \textbf{V} & \textbf{J} \\
+\midrule
+%%%%%%%%%%%%% 555555555555555555555555555555
+\rule{0pt}{8pt}
+\textbf{G} & \textbf{0.57} & 0.00 & 0.43 & 0.00  & 0.00 & 0.00 \\
+\rule{0pt}{8pt}
+\textbf{W} & 0.03 & \textbf{0.84}& 0.06 & 0.00  & 0.07 & 0.00 \\
+\rule{0pt}{8pt}
+\textbf{N} & 0.01 & 0.01 &\textbf{0.97}& 0.00  & 0.00 & 0.00 \\
+\rule{0pt}{8pt}
+\textbf{P} & 0.00 & 0.02 & 0.18 & \textbf{0.79} & 0.02 & 0.00 \\
+\rule{0pt}{8pt}
+\textbf{V} & 0.04 & 0.07 & 0.09 & 0.00  &\textbf{0.79}& 0.01 \\
+\rule{0pt}{8pt}
+\textbf{J} & 0.00 & 0.00 & 0.28 & 0.00  & 0.02  & \textbf{0.70} \\
+\bottomrule
+\end{tabular}
+\tabcolsep=6pt
+\begin{tabular}{lll}
+\rule{-3pt}{10pt}
+\tabincell{l}{G = \underline{G}round glass optic} & \tabincell{l}{W = \underline{W}ell-circumscribed} & \tabincell{c}{N = \underline{N}on-nodule} \\
+\tabincell{l}{P = \underline{P}leural-tail} & \tabincell{l}{V = \underline{V}ascularized} & \tabincell{l}{J = \underline{J}uxta-pleural} \\
+\end{tabular}
+\label{tbl:conf_cmp_elcap_colornodules}
+\end{table}
+
+\section{Results}
+See following pages.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Well-circumscribed for \emph{colornodules}}
+\begin{figure}[H]
+ \centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-iso0}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-iso1}
+}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-iso2}
+}
+\end{figure}
+
+\newpage
+\subsection{GGO for \emph{colornodules}}
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-ggo0}
+}
+\end{figure}
+
+
+\newpage
+\subsection{Juxta-pleural for \emph{colornodules}}
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-wall0}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-wall1}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-wall2}
+}
+\end{figure}
+
+\newpage
+\subsection{Pleural-tail for \emph{colornodules}}
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-tail0}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-tail1}
+}
+\end{figure}
+
+\newpage
+\subsection{Vascularized for \emph{colornodules}}
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-vessel0}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-vessel1}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-vessel2}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-vessel3}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-vessel4}
+}
+\end{figure}
+
+\newpage
+\subsection{NON-NODULE for \emph{colornodules}}
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule0}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule1}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule2}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule3}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule4}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule5}
+}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\centering
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule6}
+}
+\hspace{.1in}
+\subfigure{
+\includegraphics[width=0.45\columnwidth]{./images/elcap-colornodules-nonnodule7}
+}
+\end{figure}
+\end{document}
+
+
