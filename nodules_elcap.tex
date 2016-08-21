@@ -49,6 +49,11 @@
 \usepackage{geometry}
 \geometry{left=1.5cm,right=1.5cm,top=1.0cm,bottom=1.0cm}
 
+\usepackage[colorlinks,
+linkcolor=red,
+anchorcolor=blue,
+citecolor=green
+]{hyperref}
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 \begin{document}
@@ -94,11 +99,20 @@ The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_elcap_nod
 \end{table}
 
 \section{Results}
-See following pages.
+\textbf{Click highlighted link to jump to corresponding section.}
+\begin{itemize}
+\item \ref{iso} Well-circumscribed
+\item \ref{ggo} GGO
+\item \ref{wall} Juxta-pleural
+\item \ref{tail} Pleural-tail
+\item \ref{vessel} Vascularized
+\item \ref{non} Non-nodule
+\end{itemize}
 
 
 \newpage
 \subsection{Well-circumscribed for \emph{nodules}}
+\label{iso}
 \begin{figure}[H]
  \centering
 \subfigure{
@@ -120,6 +134,7 @@ See following pages.
 
 \newpage
 \subsection{GGO for \emph{nodules}}
+\label{ggo}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -131,6 +146,7 @@ See following pages.
 
 \newpage
 \subsection{Juxta-pleural for \emph{nodules}}
+\label{wall}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -155,6 +171,7 @@ See following pages.
 
 \newpage
 \subsection{Pleural-tail for \emph{nodules}}
+\label{tail}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -179,6 +196,7 @@ See following pages.
 
 \newpage
 \subsection{Vascularized for \emph{nodules}}
+\label{vessel}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -200,6 +218,7 @@ See following pages.
 
 \newpage
 \subsection{Non-nodule for \emph{nodules}}
+\label{non}
 \begin{figure}[H]
 \centering
 \subfigure{

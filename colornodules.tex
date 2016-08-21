@@ -47,7 +47,14 @@
 \usepackage{float}
 \usepackage{color}
 \usepackage{geometry}
+
 \geometry{left=1.5cm,right=1.5cm,top=1.0cm,bottom=1.0cm}
+
+\usepackage[colorlinks,
+linkcolor=red,
+anchorcolor=blue,
+citecolor=green
+]{hyperref}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -74,11 +81,11 @@ The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_lidc_colo
 %%%%%%%%%%%%% 2222222222222222222222222222
 \rule{0pt}{8pt}
 \textbf{G} & \textbf{0.62} & 0.00  & 0.38 & 0.00 & 0.00  & 0.00 \\
-\rule{0pt}{8pt}                                  
+\rule{0pt}{8pt}
 \textbf{W} & 0.00 & \textbf{0.86}& 0.03  & 0.00 & 0.11  & 0.00 \\
-\rule{0pt}{8pt}                                  
+\rule{0pt}{8pt}
 \textbf{N} & 0.00 & 0.02  & \textbf{0.94} & 0.02 & 0.00  & 0.03 \\
-\rule{0pt}{8pt}                                  
+\rule{0pt}{8pt}
 \textbf{P} & 0.02 & 0.12  & 0.07  & \textbf{0.79} & 0.00  & 0.00 \\
 \rule{0pt}{8pt}
 \textbf{V} & 0.02 & 0.07  & 0.05  & 0.03 & \textbf{0.83} & 0.00 \\
@@ -95,12 +102,22 @@ The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_lidc_colo
 \label{tbl:conf_cmp_lidc_colornodules}
 \end{table}
 
+
 \section{Results}
-See following pages.
+\textbf{Click highlighted link to jump to corresponding section.}
+\begin{itemize}
+\item \ref{iso} Well-circumscribed
+\item \ref{ggo} GGO
+\item \ref{wall} Juxta-pleural
+\item \ref{tail} Pleural-tail
+\item \ref{vessel} Vascularized
+\item \ref{non} Non-nodule
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Well-circumscribed for \emph{colornodules}}
+\label{iso}
 \begin{figure}[H]
  \centering
 \subfigure{
@@ -134,6 +151,7 @@ See following pages.
 
 \newpage
 \subsection{GGO for \emph{colornodules}}
+\label{ggo}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -156,6 +174,7 @@ See following pages.
 
 \newpage
 \subsection{Juxta-pleural for \emph{colornodules}}
+\label{wall}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -191,6 +210,7 @@ See following pages.
 
 \newpage
 \subsection{Pleural-tail for \emph{colornodules}}
+\label{tail}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -222,6 +242,7 @@ See following pages.
 
 \newpage
 \subsection{Vascularized for \emph{colornodules}}
+\label{vessel}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -254,6 +275,7 @@ See following pages.
 
 \newpage
 \subsection{Non-nodule for \emph{colornodules}}
+\label{non}
 \begin{figure}[H]
 \centering
 \subfigure{

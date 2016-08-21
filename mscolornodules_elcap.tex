@@ -48,7 +48,11 @@
 \usepackage{color}
 \usepackage{geometry}
 \geometry{left=1.5cm,right=1.5cm,top=1.0cm,bottom=1.0cm}
-
+\usepackage[colorlinks,
+linkcolor=red,
+anchorcolor=blue,
+citecolor=green
+]{hyperref}
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 \begin{document}
@@ -57,9 +61,10 @@
 
 \maketitle
 
-%\section{\emph{ms-colornodules} ON ELCAP}
 \section{Overall Statistics}
-The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_elcap_colornodules}. The overall classification rate is 84.3\%. Results for all cases are shown. Scores are presented on the most right of the image. It should be noted that cases not correctly classified are labeled out using red rectangles.
+The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_elcap_colornodules}. The overall 
+classification rate is 84.3\%. Results for all cases are shown. Scores are presented on the most right of the image. 
+It should be noted that cases not correctly classified are labeled out using red rectangles.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[H]
@@ -94,12 +99,22 @@ The confusion matrix for each type is shown in Table~\ref{tbl:conf_cmp_elcap_col
 \label{tbl:conf_cmp_elcap_colornodules}
 \end{table}
 
+
 \section{Results}
-See following pages.
+\textbf{Click highlighted link to jump to corresponding section.}
+\begin{itemize}
+\item \ref{iso} Well-circumscribed
+\item \ref{ggo} GGO
+\item \ref{wall} Juxta-pleural
+\item \ref{tail} Pleural-tail
+\item \ref{vessel} Vascularized
+\item \ref{non} Non-nodule
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Well-circumscribed for \emph{ms-colornodules}}
+\label{iso}
 \begin{figure}[H]
  \centering
 \subfigure{
@@ -121,6 +136,7 @@ See following pages.
 
 \newpage
 \subsection{GGO for \emph{ms-colornodules}}
+\label{ggo}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -134,6 +150,7 @@ See following pages.
 
 \newpage
 \subsection{Juxta-pleural for \emph{ms-colornodules}}
+\label{wall}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -158,6 +175,7 @@ See following pages.
 
 \newpage
 \subsection{Pleural-tail for \emph{ms-colornodules}}
+\label{tail}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -171,6 +189,7 @@ See following pages.
 
 \newpage
 \subsection{Vascularized for \emph{ms-colornodules}}
+\label{vessel}
 \begin{figure}[H]
 \centering
 \subfigure{
@@ -203,6 +222,7 @@ See following pages.
 
 \newpage
 \subsection{Non-nodule for \emph{ms-colornodules}}
+\label{non}
 \begin{figure}[H]
 \centering
 \subfigure{
